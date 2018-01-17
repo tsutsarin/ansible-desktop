@@ -24,11 +24,4 @@
         name: "{{ item }}"
         state: present
       with_items:
-        - ranger-fm     
-
-    - name: Install Rust
-      become: yes
-      shell: "curl https://sh.rustup.rs -sSf | sh -s -- -y"
-      changed_when: false
-
-    # - name: Compile alacritty
+        - ranger-fm  
